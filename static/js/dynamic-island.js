@@ -8,8 +8,13 @@ const minHeight = 13;
 var musicState = 'On';
 var intervalId;
 var song = document.getElementById('song');
+
+const muteIcon = document.querySelector('.off');
+const playingIcon = document.querySelector('.on');
 //Play
 function on(){
+    playingIcon.style.display = "flex";
+    muteIcon.style.display = "none";
     song.play();
     function randomheights(){
         var randomInteger = Math.floor(Math.random() * (maxHeight - minHeight)) + minHeight;
@@ -32,6 +37,8 @@ function off(){
     child1.style.height = minHeight + 'px';
     child2.style.height = minHeight + 'px';
     child3.style.height = minHeight + 'px';
+    muteIcon.style.display = "flex";
+    playingIcon.style.display = "none";
 }
 
 off();

@@ -128,7 +128,9 @@ p,h1 {
 section{
     position: relative;
 }
-
+.off{
+    height: unset;
+}
 .contacts_icons{
     display: flex;
     gap: 20px;
