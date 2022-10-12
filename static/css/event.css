@@ -16,9 +16,12 @@
     src: url(../fonts/AvenirNextLTPro-Bold.otf);
 }
 body{
-    margin: 0;
-    background: #030A1D;
+    margin: 0;    
+    background-image: url(../icons/background-texture.svg);
+    background-color: #030A1D;
     color: white;
+    overflow-x: hidden;
+    background-repeat: repeat-y;
 }
 p,h1 {
     margin: 0;
@@ -46,7 +49,7 @@ p,h1 {
     opacity: 0.5;
     z-index: -1;
 }
-.texture{
+/* .texture{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -56,7 +59,7 @@ p,h1 {
     height: 100vh;
     object-fit: cover;
     width: 100vw;
-}
+} */
 .dynamic-island{
     display: flex;
     gap: 20px;
@@ -165,6 +168,20 @@ section{
     flex-direction: column;
     gap: 20px;
 }
+.iframeContainer{
+    overflow: hidden;
+    height: 38vh;
+    width: 100%;
+    position: relative;
+
+}
+.iframeContainer iframe{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 .logo{
     height:25px;
     opacity: 0.7;
@@ -249,10 +266,21 @@ section{
 .event{
     display: flex;
     gap: 30px;
-    background: linear-gradient(180deg, rgba(38, 53, 155, 0) 0%, rgba(0, 80, 183, 0.2) 100%), linear-gradient(180deg, rgba(130, 70, 170, 0.2) 0%, rgba(130, 70, 170, 0) 100%), #030A1D;
-    border-radius: 12px;
     box-sizing: border-box;
     padding: 35px;
+    position: relative;
+}
+.event::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(180deg, rgba(38, 53, 155, 0) 0%, rgba(0, 80, 183, 0.2) 100%), linear-gradient(180deg, rgba(130, 70, 170, 0.2) 0%, rgba(130, 70, 170, 0) 100%), #030A1D;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    border-radius: 12px;
+    z-index: -1;
 }
 .event-poster{
     height: 400px;
@@ -294,4 +322,18 @@ section{
         height: unset;
         width: calc(100vw - 8vw);
     }
+}
+.track-events{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.track-name{
+    margin-left: 4vw;
+    font-family: 'Avenir Next LT Pro B';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    letter-spacing: 0.05em;
+    color: #DFDFE9;
 }
