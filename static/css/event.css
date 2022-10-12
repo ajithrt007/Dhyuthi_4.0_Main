@@ -294,7 +294,7 @@ section{
     font-family: 'Avenir Next LT Pro B';
     font-style: normal;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 45px;
     letter-spacing: 0.05em;
     color: #DFDFE9;
     margin-top: 0;
@@ -329,11 +329,43 @@ section{
     gap: 0px;
 }
 .track-name{
-    margin-left: 4vw;
+    margin-left: 6vw;
     font-family: 'Avenir Next LT Pro B';
     font-style: normal;
     font-weight: 600;
     font-size: 70px;
     letter-spacing: 0.05em;
     color: #DFDFE9;
+    position: relative;
+}
+.track-name::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: -30px;
+    background: white;
+    width: 7px;
+    background: #8F1BD6;
+    box-shadow: 0px 0px 19px 6px #8F1BD6;
+    border-radius: 100px;
+}
+@media screen and (max-width: 500px) {
+    .page-heading{
+        font-size: 70px;
+    }
+    .track-name{
+        margin-left: 12vw;
+        font-weight: 500;
+        font-size: 55px;
+        margin-bottom: 0;
+    }
+    .event-name{
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .event-description{
+        font-weight: 400;
+        font-size: 18px;
+    }
 }
