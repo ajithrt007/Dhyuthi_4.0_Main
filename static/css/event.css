@@ -274,6 +274,11 @@ section{
 }
 .event-poster{
     height: 400px;
+    opacity: 0;
+}
+.poster-loader{
+    background: #ffffff url(../loader2.gif) no-repeat center center;
+    opacity: 1;
 }
 .event-right-side{
     display: flex;

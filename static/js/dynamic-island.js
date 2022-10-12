@@ -3,7 +3,7 @@ const music = document.querySelector('.sound-container').children;
 const child1 = music[0];
 const child2 = music[1];
 const child3 = music[2];
-const maxHeight = 25;
+const maxHeight = 23;
 const minHeight = 13;
 var musicState = 'On';
 var intervalId;
@@ -67,20 +67,20 @@ function expandIsland(){
 }  
 window.addEventListener('scroll',function(){
     scrollHeight = this.window.scrollY;
-    if(scrollHeight > 0 && (this.screen.width >=726)){
+    if(scrollHeight > 0 && (this.screen.width >=820)){
             compressIsland();
     }
-    if(scrollHeight == 0 && (this.screen.width >=726)){
+    if(scrollHeight == 0 && (this.screen.width >=820)){
             expandIsland();
     }
 });
 navIsland.addEventListener('mouseover',function(){
-    if(screen.width >=726){
+    if(screen.width >=820){
         expandIsland();
     }   
 });
 navIsland.addEventListener('mouseout',function(){
-    if(screen.width >=726){
+    if(screen.width >=820){
         compressIsland();
     }  
 });    
@@ -120,7 +120,7 @@ function makeATagClickable(){
         navIslandChildren[i].style.cursor = "unset";
     }
 }
-if(screen.width < 726){
+if(screen.width < 820){
     compressIsland();
     makeATagUnclickable();
     navIsland.addEventListener('click',function(){
