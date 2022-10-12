@@ -1,0 +1,458 @@
+:root {
+    --height_of_dynamic_island : 70px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: Avenir Next LT Pro Regular;
+    src: url(../fonts/Avenir\ Next\ LT\ Pro\ Regular.otf);
+}
+@font-face {
+    font-family: Avenir Next LT Pro;
+    src: url(../fonts/AvenirNextLTPro-It.otf);
+}
+@font-face {
+    font-family: Avenir Next LT Pro B;
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+body{
+    margin: 0;
+    background: #030A1D;
+    color: white;
+    overflow-x: hidden;
+    height: 100%;
+}
+.dhyuthi-txt{
+    position: absolute;
+    width: 100%;
+    top: -64px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+}
+.dhyuthi-txt img{
+    width: 90%;
+}
+.violet-shade{
+    background: #8F1BD6;
+    filter: blur(228px);
+    height: 80vh;
+    width: 60vw;
+    border-radius: 50%;
+    position: absolute;
+    right: -290px;
+    bottom: -200px;
+    opacity: 0.4;
+}
+.blue-shade{
+    background: linear-gradient(180deg, #1045AE 0%, #0050B7 100%);
+    filter: blur(200px);
+    height: 50vh;
+    width: 40vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.dynamic-island{
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    z-index: 200;
+    width: 100vw;
+    justify-content: center;
+    top: 25px;
+}
+.sound-island{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border: 2px solid #8F1BD6;
+    box-shadow: 0px 0px 272.16px #8246AA, 0px 0px 155.52px #8246AA, 0px 0px 90.72px #8246AA, 0px 0px 45.36px #8246AA, 0px 0px 12.96px #8246AA, 0px 0px 6.48px #8246AA;
+    border-radius: 50%;
+    height: var(--height_of_dynamic_island);
+    width: var(--height_of_dynamic_island);
+    cursor: pointer;
+}
+.sound-container{
+    display: flex;
+    gap: 5px;    
+    opacity: 0.5;
+    align-items: flex-end;
+    height: 23px;
+}
+.sound-container:hover{
+    opacity: 0.9;
+}
+.sound-container div{
+    background: white;
+    height: 20px;
+    width: 3px;
+}
+.logos-island{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: var(--height_of_dynamic_island);
+    gap: 30px;
+    padding: 0 30px;
+    border-radius: 200px;
+    box-sizing: border-box;
+    border: 2px solid #0050B7;
+    box-shadow: 0px 0px 1316.71px #26359B, 0px 0px 752.405px #26359B, 0px 0px 438.903px #26359B, 0px 0px 219.451px #26359B, 0px 0px 62.7004px #26359B, 0px 0px 31.3502px #26359B;
+}
+.island-logo{
+    height: 20px;
+}
+.logo-txt{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+.logo-and-txt{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.logo-and-txt:hover{
+    opacity: 0.9;
+}
+.mobExpand{
+    flex-direction:column !important;
+    height: unset !important;
+    padding: 30px 40px !important;
+    align-items: flex-start !important;
+    gap:30px !important; 
+    border-radius: 35px !important;
+}
+.home{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section{
+    position: relative;
+}
+.texture{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+}
+.dhLogo-and-comingSoon{
+    display: flex;
+    gap: 11vw;
+    padding: 0 7vw;
+    margin-top: 19vh;
+    position: absolute;
+}
+.dhyuthi-logo-main{
+    /*! position: relative; */
+    /*! margin-top: 6vh; */
+    /*! height: 10vh; */
+}
+.logo-main{
+    position: relative;
+    height: 60vh;
+}
+.comingSoon-part{
+    display: flex;
+    flex-direction: column;    
+    z-index: 100;
+}
+.days-pending{
+    display: flex;
+    gap: 4vw;
+}
+.comingSoon-txt{
+    font-family: 'Avenir Next LT Pro B';
+    font-style: revert;
+    font-weight: 100;
+    font-size: 90px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+.unit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43.9793px;
+    color: #FFFFFF;
+    border: 4.54px solid white;
+    border-radius: 50%;
+    background: transparent;
+}
+.comingSoon-part{
+    /*! margin-top: 17vh; */
+}
+.aboutSection{
+    height: 100vh;
+    width: 100vw;
+    background: #030A1D;
+    box-shadow: 0px 0px 310.731px #030A1D, 0px 0px 177.56px #030A1D, 0px 0px 103.577px #030A1D, 0px 0px 51.7885px #030A1D, 0px 0px 14.7967px #030A1D, 0px 0px 7.39835px #030A1D;
+}
+.blue-bg{
+    position: absolute;
+    top: -423px;
+    left: 0;
+    /*! right: 0; */
+    /*! bottom: 0; */
+    z-index: 2;
+    opacity: 1;
+    /*! height: 100vh; */
+    width: 100vw;
+    object-fit: cover;
+}
+.campus-button{
+    background: #070C23;
+    color: white;
+    box-shadow: 0px 2.75px 2.75px rgba(0, 0, 0, 0.25), 0px 0px 159.071px #761EDF, 0px 0px 90.8978px #761EDF, 0px 0px 53.0237px #761EDF, 0px 0px 26.5119px #761EDF, 0px 0px 7.57482px #761EDF;
+    backdrop-filter: blur(7.90624px);
+    border-radius: 25px;
+    padding: 16px 32px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Avenir Next LT Pro Regular';
+}
+#campussambassador{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campusContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.section_text{
+    text-align: center;
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    padding: 0 4vw;
+}
+.astersikParent{
+    position: relative;
+    font-size: 32px;
+    font-family: 'Avenir Next LT Pro B';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+.astersikParent::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top : 0;
+    background: url(../icons/astrik.svg);
+    height: 20px;
+    width: 20px;
+}
+.contacts_icons{
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    height:25px;
+    opacity: 0.7;
+}
+.logo:hover{
+    opacity: 1;
+}
+.contacts_title{
+    font-family: 'Avenir Next LT Pro B';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-bottom: 2vh;
+}
+.contacts_txt{
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.about{
+    z-index: 3;
+    position: relative;
+}
+.light-blue-shade{
+    background: linear-gradient(180deg, #893EFF 0%, #0BC2EF 100%), #8F1BD6;
+    filter: blur(300px);
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    top:-10vh;
+    left: -401px;
+    opacity: 0.6;
+}
+.aboutSection{
+    background: url(../static/icons/background-texture.svg);
+}
+.circle-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 811px) {
+    body{
+        overflow-x: hidden;
+    }
+    .dhyuthi-txt{
+        top: 0px;
+    }
+    .dhLogo-and-comingSoon{
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-top: 20vh;
+        justify-content: center;
+    }
+    .logo-main{
+        width: 50vw;
+        height: unset;
+    }
+    .comingSoon-txt{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .home{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .aboutSection{
+        height: 60vh;
+    }
+    .blue-bg{
+        top: -260px; 
+    }
+    #about_text{
+        width: 80vw !important;
+    }
+    .logo{
+        height: 40px;
+    }
+    .contacts_rectangle_front{
+        gap: 40px !important;
+    }
+    .contacts_icons{
+        gap: 40px;
+    }
+    #about_text{
+        top: 25vh !important;
+    }
+}
+@media screen and (max-width: 430px) {
+    body{
+        overflow-x: hidden;
+    }
+    .dhLogo-and-comingSoon{
+        box-sizing: border-box;
+        width: 100vw;
+     }
+    .comingSoon-txt{
+        font-size: 40px;
+    }
+    .circle {
+          height: 18vw;
+          width: 18vw;
+          font-weight: 700;
+          font-size: 27px;
+          color: #FFFFFF;
+          border: 4px solid white;
+     }
+    .contacts_icons{
+        gap: 59px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+        column-gap: 50px;
+    }
+    .aboutSection{
+        height: 80vh;
+    }
+    .blue-bg{
+        top: -168px;
+    }
+    #looper{
+        top: 0vh !important;
+    }
+    #about_title{
+        top: -2vh !important;
+        font-family: 'Avenir Next LT Pro B' !important;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px !important;
+        left: 38vw !important;
+    }
+    #about_text{
+        top: 6vh !important;
+    }
+    .light-blue-shade{
+        left: -100px;
+    }
+    .section_text{
+        padding: 0 8vw;
+        font-size: 3.9vw;
+    }
+    .astersikParent{
+       padding: 0 8vw; 
+        text-align: center;
+       font-size: 30px;
+    }
+    .logos-island{        
+        padding: 0 20px;
+        height: 60px;
+        box-shadow: 0px 0px 548.228px rgba(38, 53, 155, 0.8), 0px 0px 313.273px rgba(38, 53, 155, 0.8), 0px 0px 182.743px rgba(38, 53, 155, 0.8), 0px 0px 91.3714px rgba(38, 53, 155, 0.8), 0px 0px 26.1061px rgba(38, 53, 155, 0.8), 0px 0px 13.0531px rgba(38, 53, 155, 0.8);
+    }
+    .sound-island{        
+        height: 60px;
+        width: 60px;
+        box-shadow: 0px 0px 113.317px rgba(130, 70, 170, 0.8), 0px 0px 64.7527px rgba(130, 70, 170, 0.8), 0px 0px 37.7724px rgba(130, 70, 170, 0.8), 0px 0px 18.8862px rgba(130, 70, 170, 0.8), 0px 0px 5.39606px rgba(130, 70, 170, 0.8), 0px 0px 2.69803px rgba(130, 70, 170, 0.8);
+    }
+    .dhyuthi-txt{
+        top: 30px;
+    }
+    .contacts_title{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .contacts_txt{
+        font-size: 3.9vw;
+    }
+    .logo{
+        height: 31px;
+    }
+}

@@ -1,0 +1,45 @@
+.contacts_rectangle_front {
+    width: 100vw;
+    background-color: #030A1D;
+    border-radius: 9.53495px 9.53495px 0px 0px;
+    padding: 6vh 4vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts_rectangle_front::before{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    content: '';
+    background-image: linear-gradient(to right,#419CFF,#419CFF,
+    #7C0FDB,#074CB4);
+    border-radius: 9.53495px 9.53495px 0px 0px;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
+#contacts_title {
+    /* position: absolute;
+    left: 5vw;
+    top: 75vh; */
+
+    color: #ffffff;
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75vh;
+    /* line-height: 7vh;  */
+}
+
+#contacts_icons {
+    display: flex;
+    /* position: absolute;
+    left: 5vw;
+    top: 90vh;
+    height: 3vh;
+    width: auto; */
+}
