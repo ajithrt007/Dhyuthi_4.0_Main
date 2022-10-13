@@ -11,6 +11,10 @@
     height: unset;
     padding: 8vw;
 } */
+.animatedPicture{
+    height: unset !important;
+    padding: 6vw;
+}
 .gallery{
     display: flex;
     padding: 8vh 6vw 0 6vw;
@@ -62,7 +66,7 @@ figcaption{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 2vw;
+    padding-right: 4vw;
     font-family: 'Avenir Next LT Pro B';
     font-style: italic;
     font-weight: 700;
