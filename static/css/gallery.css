@@ -14,10 +14,19 @@
 .animatedPicture{
     height: unset !important;
     padding: 6vw;
+    animation: first 2s;
+}
+@keyframes first{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1 ;
+    }
 }
 .gallery{
     display: flex;
-    padding: 8vh 6vw 0 6vw;
+    padding: 8vh 6vw;
     flex-direction: column;
     gap: 4px;
 }
@@ -35,6 +44,9 @@
     }
     figcaption{
         font-size: 5vh !important;
+    }
+    .animatedPicture{
+        padding: unset;
     }
 }
 /* .picture::before{
