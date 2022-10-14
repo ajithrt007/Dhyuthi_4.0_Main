@@ -293,7 +293,7 @@ section{
     font-family: 'Avenir Next LT Pro B';
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: 0.05em;
     color: #DFDFE9;
     margin-top: 0;
@@ -303,7 +303,7 @@ section{
     font-family: 'Avenir Next LT Pro Regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
 }
 @media screen and (max-width: 882px) {
@@ -332,7 +332,7 @@ section{
     font-family: 'Avenir Next LT Pro B';
     font-style: normal;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 50px;
     letter-spacing: 0.05em;
     color: #DFDFE9;
     position: relative;
@@ -359,7 +359,7 @@ section{
     .track-name{
         margin-left: 12vw;
         font-weight: 500;
-        font-size: 55px;
+        font-size: 50px;
         margin-bottom: 0;
     }
     .event-name{
