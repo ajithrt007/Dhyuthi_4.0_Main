@@ -28,10 +28,13 @@
     <div style="position:absolute;top:0;" id="home"></div>
     <div class="dynamic-island">
         <div class="sound-island">
-            <div class="sound-container">                
+            <div class="sound-container on">                
                 <div></div>
                 <div></div>
                 <div></div>
+            </div>
+            <div class="sound-container off">                
+                <img src="static/icons/mute-icon.svg" alt="" class="mutted island-logo">
             </div>
         </div>
         <audio id="song" hidden loop autoplay>
@@ -43,15 +46,23 @@
                 <p class="logo-txt">Home</p>            
             </a>
             <a onclick="goToAbout()" class="logo-and-txt">          
-                <img src="static/icons/about.svg" height="27" width="27" alt="About" class="island-logo">
-                <p class="logo-txt">About</p>         
+                <img src="static/icons/events-icon.svg" height="27" width="27" alt="About" class="island-logo">
+                <p class="logo-txt">Events</p>         
             </a>
             <a onclick="goToCA()" class="logo-and-txt">           
-                <img src="static/icons/campuss-ambassador.svg" height="27" width="27" alt="Ambassador" class="island-logo">
-                <p class="logo-txt">Campus Ambassador</p>           
+                <img src="static/icons/gallery-icon.svg" height="27" width="27" alt="Ambassador" class="island-logo">
+                <p class="logo-txt">Gallery</p>           
             </a>
             <a onclick="goToContact()" class="logo-and-txt">            
-                <img src="static/icons/contact.svg" height="27" width="27" alt="Contact" class="island-logo">
+                <img src="static/icons/schedule-icon.svg" height="27" width="27" alt="Contact" class="island-logo">
+                <p class="logo-txt">Schedule</p>           
+            </a>
+            <a onclick="goToContact()" class="logo-and-txt">            
+                <img src="static/icons/ticket-icon.svg" height="27" width="27" alt="Contact" class="island-logo">
+                <p class="logo-txt">Tickets</p>           
+            </a>
+            <a onclick="goToContact()" class="logo-and-txt">            
+                <img src="static/icons/mail-icon-white.svg" height="27" width="27" alt="Contact" class="island-logo">
                 <p class="logo-txt">Contact</p>           
             </a>
         </div>
@@ -88,63 +99,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="comingSoon-part">
-                <h1 class="comingSoon-txt">Coming Soon</h1>
-                <div class="days-pending">
-                    <div class="unit">
-                        <div class="circle-container">
-                            <svg class="loop">
-                                <circle class="desktopcircle" id="d1"  cx="100" cy="100" r="90" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="7" fill="none" />
-                            </svg>
-                            <p id="days" class="number">0</p>
-                        </div>
-                        <p class="circle-title">Days</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="timer days-pending">
-                <div>   
-                    <div class="ring">
-                        <svg class="loop" height="100" width="100">
-                            <circle class="desktopcircle" id="d1"  cx="100" cy="100" r="90" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="7" fill="none" />
-                            <circle class="mobilecirlce" id="m1"  cx="50" cy="50" r="40" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="5" fill="none"  />
-                          </svg>
-                        <h2 id="days"class="innertext">0</h2>
-                        <p>Days</p>
-                    </div>
-
-                </div>
-                <div>
-                    <div class="ring">
-                        <svg class="loop" height="100" width="100">
-                            <circle class="desktopcircle"  cx="50" cy="50" r="40" id="d2" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="5" fill="none" />
-                            <circle class="mobilecirlce"  cx="50" cy="50" r="40" id="m2" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="5" fill="none"  />
-                          </svg>
-                        <h2 id="hours" class="innertext">0</h2>
-                        <p>Hours</p>
-                    </div>
-                </div>
-                <div >
-                    <div class="ring">
-                        <svg class="loop" height="100" width="100">
-                            <circle class="desktopcircle" cx="50" cy="50" r="40" id="d3" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="5" fill="none"  />
-                            <circle class="mobilecirlce "  cx="50" cy="50" r="40"  id="m3" stroke-dasharray="50,240" stroke="#0050B7" stroke-width="5" fill="none"  />
-                          </svg>
-                        <h2 id="mins" class="innertext">0</h2>
-                        <p>Mins</p>
-                    </div>
-                </div>
-                <div >
-                    <div class="ring">
-                        <svg class="secondsvg" height="100" width="100">
-                            <circle class="desktopcircle loopsecond"  cx="50" cy="50" r="40" id="d4"   stroke="#0050B7" stroke-width="5" fill="none" />
-                            <circle class="mobilecirlce loopsecond"  cx="50" cy="50" r="40" id="m4"   stroke="#0050B7" stroke-width="5" fill="none" />
-                          </svg>
-                        <h2 id="secs" class="innertext">0</h2>
-                        <p>Secs</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     
