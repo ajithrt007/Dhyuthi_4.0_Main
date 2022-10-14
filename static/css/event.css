@@ -113,6 +113,8 @@ p,h1 {
     align-items: center;
     opacity: 0.5;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 .logo-and-txt:hover{
     opacity: 0.9;
