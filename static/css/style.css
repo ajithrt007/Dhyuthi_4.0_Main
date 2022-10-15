@@ -604,4 +604,24 @@ h1,h2,h3,h4,h5,h6 {
     .testimonial{
         padding: 35px;
     }
+    .testimonial-author{
+        opacity: 0.7;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .testimonial-detail{
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        opacity: 0.7;
+    }
+    .summary-line{
+        font-size: 30px;
+        color: white;
+        opacity: 1;
+    }
+    
+.marquee-inner h1{
+    font-size: 80px;
+}
 }
