@@ -21,8 +21,8 @@
     <meta property="og:image" content="static/images/Dhyuthi-meta-tag-logo.png" />
     <link rel="icon" href="static/icons/dhyuthiconsteationogo.svg" type="image/x-icon"/>
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/about.css">
-    <link rel="stylesheet" href="static/css/contacts.css">
+    <!-- <link rel="stylesheet" href="static/css/about.css">
+    <link rel="stylesheet" href="static/css/contacts.css"> -->
     <link rel="stylesheet" href="static/css/event.css">
 </head>
 <body>
@@ -58,7 +58,7 @@
                 <img src="static/icons/schedule-icon.svg" height="27" width="27" alt="Contact" class="island-logo">
                 <p class="logo-txt">Schedule</p>           
             </a>
-            <a onclick="goToContact()" class="logo-and-txt">            
+            <a href="tickets.html" class="logo-and-txt">            
                 <img src="static/icons/ticket-icon.svg" height="27" width="27" alt="Contact" class="island-logo">
                 <p class="logo-txt">Tickets</p>           
             </a>
@@ -101,6 +101,19 @@
                 </div>
             </div>
         </div>
+        <a href="tickets.html" style="text-decoration: none; color: white;">
+            <div class="marquee-container">
+                <marquee behavior="scroll" scrollamount="10" scrolldelay="50" direction="left">
+                    <div class="marquee-inner">
+                        <h1 class="filled-txt">GRAB</h1>
+                        <h1>YOUR</h1>
+                        <h1 class="filled-txt">TICKETS</h1>
+                        <h1>NOW</h1>
+                    </div>                
+                </marquee>
+            </div>
+        </a>
+        <div class="message-box">Click to Book Tickets</div>
     </section>
     
     <section id="campussambassador">
@@ -113,6 +126,11 @@
                 <br> Campus Ambassadors are interested and excited about the whole event, its beliefs, what it stands for, and its work. Possession of leadership qualities, taking initiative, and charging on their campuses makes them all together more influential.
             </div>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScs7yNqc57NYYsdKUwP9szRvELoaU2bTs_NPmr2f4l99cGMxQ/viewform?usp=sf_link" class="campus-button">Register Here</a>
+        </div>
+    </section>
+    <section class="testimonials">
+        <div class="testimonial">
+
         </div>
     </section>
     <section id="contact">
@@ -130,6 +148,7 @@
             </div>
         </div>
     </section>
+    <script src="static/js/message-box-indexPage.js"></script>
     <script src="static/js/dynamic-island.js"></script>
     <script src="static/js/coming-soon.js"></script>
     <script src="static/js/scrollToPosition.js"></script>
