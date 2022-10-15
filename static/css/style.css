@@ -322,6 +322,12 @@ section{
     z-index: 3;
     position: relative;
 }
+.section_title{
+    font-family: 'Avenir Next LT Pro B';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
 .light-blue-shade{
     background: linear-gradient(180deg, #893EFF 0%, #0BC2EF 100%), #8F1BD6;
     filter: blur(300px);
@@ -528,4 +534,74 @@ section{
     padding:15px;
     border-radius: 10px;
     background: black;
+}
+.testimonials-section, .testimonials, .testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials-section{
+    gap: 3vh;
+}
+.testimonials{
+    gap: 4vh;
+    padding: 0 4vw 10vh 4vw;
+}
+.testimonial{
+    padding: 50px;
+    position: relative;
+    gap: 5vh;
+}
+.testimonial::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    content: '';
+    background: linear-gradient(180deg, rgba(38, 53, 155, 0) 0%, rgba(0, 80, 183, 0.2) 100%), linear-gradient(180deg, rgba(130, 70, 170, 0.2) 0%, rgba(130, 70, 170, 0) 100%);
+    background: rgb(0,0,0,0.6);
+    opacity: 0.8;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;    
+}
+.summary-line{
+    font-family: 'Avenir Next LT Pro';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #DFDFE9;
+    -webkit-text-stroke: 1.08624px solid #FFFFFF;
+    text-shadow: 0px 4.34494px 21.7247px rgba(255, 255, 255, 0.5);
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+.testimonial-detail{
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: capitalize;    
+}
+.testimonial-author{
+    font-family: 'Avenir Next LT Pro Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: capitalize; 
+    text-align: right;
+    width: 100%;
+}
+@media screen and (max-width: 470px) {
+    .testimonial{
+        padding: 35px;
+    }
 }
