@@ -628,6 +628,7 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     padding: 4vw;
     position: relative;
+    overflow-x: hidden;
 }
 .about-section::before{
     content: url(../images/Dark_blue_seperator.svg);
