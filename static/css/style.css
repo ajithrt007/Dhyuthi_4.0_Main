@@ -526,14 +526,14 @@ section{
 }
 .message-box{
     z-index: 300;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 24px;
     display: inline;
     padding:15px;
     border-radius: 10px;
     background: black;
+    font-family: 'Avenir Next LT Pro Regular';
 }
 .testimonials-section, .testimonials, .testimonial{
     display: flex;
@@ -619,9 +619,180 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 30px;
         color: white;
         opacity: 1;
+    }    
+    .marquee-inner h1{
+        font-size: 80px;
     }
-    
-.marquee-inner h1{
-    font-size: 80px;
 }
+.about-section{
+    display: flex;
+    padding: 4vw;
+    position: relative;
 }
+.about-section::before{
+    content: url(../images/Dark_blue_seperator.svg);
+    position: absolute;
+    top: -400px;
+    left: 0;
+    z-index: -1;
+    height:100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.about-description{
+    padding: 0;
+    text-align: left;
+}
+.about-left-part h1{
+    margin-top: 33vh;
+    margin-bottom: 5vh;
+}
+.about-section-img{
+    width: 50vw;
+}
+@media screen and (max-width: 1255px) {
+    .about-left-part h1{
+        margin-top: 23vh;
+    }
+    .about-section-img{
+        margin-top: 8vh;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about-section-img{
+        margin-top: 10vh;
+    }
+}
+@media screen and (max-width: 940px) {
+    .about-section{
+        position: relative;
+    }
+    .about-description{
+        width: 70vw;
+    }
+    .about-left-part{
+        margin-left: 4vw;
+    }
+    .about-right-part{
+        position: relative;
+    }
+    .about-section-img{
+        position: absolute;
+        top: 8vh;
+        right: 0vw;
+    }
+    .about-left-part{
+        width:100vw;
+    }
+}
+.dhyuthi-theme{
+    display: flex;
+    height: 100vh;
+    padding: 0 4vw;
+    gap: 20vw;
+    padding-top: 4vh;
+}
+.theme-left{
+    position: relative;
+}
+.theme-title{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+.theme-right{
+    padding-top: 0vh;    
+}
+.enter-dhyuthiverse{
+    margin-top: 50px;
+}
+.theme-left img{
+    height: 80vh;
+}
+.theme-blue-shade{
+    left: -117px !important;
+}
+.cursive-heading{
+    font-family: 'cursive-writing-font';
+}
+.theme-dark-layer{
+    position: absolute;
+    bottom: 178px;
+    z-index: 10;
+    width: 100vw;
+    height: 30vh;
+    background: linear-gradient(360deg, #030A1D 0%, rgba(4, 10, 30, 0.82) 117.89%);
+    filter: blur(35px);
+}
+.cursive-heading{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    color: #FFFFFF;
+    transform: rotate(-10.09deg);
+}
+.dhyuthi-spcl-title{
+    font-size: 65px;
+    letter-spacing: 0.01em;
+    background: linear-gradient(180deg, #FFFEFE 0%, rgba(184, 184, 184, 0.83) 227.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+@media screen and (max-width: 1565px) {
+    .dhyuthi-theme{
+        gap: 10vw;
+    }
+    .dhyuthi-spcl-title{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .dhyuthi-theme{
+        gap: 5vw;
+    }
+    .dhyuthi-spcl-title{
+        font-size: 4.5vw;
+    }
+    .cursive-heading{
+        font-size:  4.5vw;
+    }
+    .theme-left img{
+        height: unset;
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 870px) {
+    .dhyuthi-theme{
+       margin-top: 6vh;
+    }
+}
+@media screen and (max-width: 870px){
+    .dhyuthi-theme{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8vh;
+        margin-top:0;
+    }
+    .theme-right{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .theme-dark-layer{
+        bottom: 0px;
+        height: 20vh;
+    }
+    .dhyuthi-spcl-title{
+        font-size: 8.5vw;
+    }
+    .cursive-heading{
+        font-size:  6.5vw;
+    }
+    .theme-left img{
+        width: 70vw;
+    }
+}
+   
