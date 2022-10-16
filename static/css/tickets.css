@@ -56,9 +56,14 @@
     display: flex;
     gap: 20vw;
 }
+.tees{
+    width: 45vw;
+}
 .earth{
     position: absolute;
     right: 0;
+    width: 40vw;
+    z-index: -1;
 }
 .merch .violet-shade{
   background: #8F1BD6;
@@ -71,4 +76,9 @@
   left: -350px;
   bottom: unset;
   opacity: 0.4;
+}
+@media screen and (max-width: 810px) {
+    .merch{
+        flex-direction: column;
+    }
 }
