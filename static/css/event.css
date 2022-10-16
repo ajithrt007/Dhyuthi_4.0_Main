@@ -371,3 +371,14 @@ section{
         overflow-x: hidden;
     }
 }
+
+.page-loader{
+    position: absolute;
+    top:0;
+    height: 100vh;
+    left:0;
+    right:0;
+    background: black url('../loader1.gif') no-repeat center center;
+    background-size: 30%;
+    z-index: 200;
+}
