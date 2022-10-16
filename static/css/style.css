@@ -691,6 +691,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0 4vw;
     gap: 20vw;
     padding-top: 4vh;
+    align-items: center;
 }
 .theme-left{
     position: relative;
@@ -703,6 +704,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .theme-right{
     padding-top: 0vh;    
+    z-index: 30;
 }
 .enter-dhyuthiverse{
     margin-top: 50px;
@@ -718,12 +720,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 .theme-dark-layer{
     position: absolute;
-    bottom: 178px;
+    bottom: 78px;
     z-index: 10;
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     background: linear-gradient(360deg, #030A1D 0%, rgba(4, 10, 30, 0.82) 117.89%);
-    filter: blur(35px);
+    filter: blur(65px);
 }
 .cursive-heading{
     font-style: normal;
