@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 .theme-right img{
-  height: 40vw;
+  height: 35vw;
 }
 .theme-right h1{
   width: unset;
@@ -50,4 +50,25 @@
   .price{
     font-size: 4.5vw;
   }
+}
+.merch{
+    padding: 6vh 4vw;
+    display: flex;
+    gap: 20vw;
+}
+.earth{
+    position: absolute;
+    right: 0;
+}
+.merch .violet-shade{
+  background: #8F1BD6;
+  filter: blur(228px);
+  height: 80vh;
+  width: 60vw;
+  border-radius: 50%;
+  position: absolute;
+  right: unset;
+  left: -350px;
+  bottom: unset;
+  opacity: 0.4;
 }
