@@ -39,7 +39,7 @@
   }
   .theme-right img{
     height: unset;
-    width: 70vw;
+    width: 80vw;
   }
   .dhyuthi-spcl-title{
     font-size: 13vw; 
@@ -49,6 +49,10 @@
   }
   .price{
     font-size: 4.5vw;
+  }
+  .theme-right .earth{
+    height: unset;
+    width: 50vw;
   }
 }
 .merch{
@@ -80,5 +84,6 @@
 @media screen and (max-width: 810px) {
     .merch{
         flex-direction: column;
+        gap: 30px;
     }
 }
