@@ -1,0 +1,38 @@
+.tickets{
+  display: flex;
+  padding: 14vh 4vw 8vh 4vw;
+  /*! height: 100vh; */
+  box-sizing: border-box;
+  gap: 4vw;
+  justify-content: space-evenly;
+}
+.theme-right {
+  padding-top: 0vh;
+  z-index: 30;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.theme-right img{
+  height: 50vw;
+}
+.theme-right h1{
+  width: unset;
+}
+.price{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 1vh 0;
+  text-shadow: 0px 0px 19.025px rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 885px) {
+  .tickets{
+    height: unset;
+    flex-direction: column;
+  }
+}
