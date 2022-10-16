@@ -833,3 +833,28 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     right: 0;
 }
+@media screen and (max-width: 1658px){
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        overflow-x: hidden;
+    }
+    .dhLogo-and-comingSoon{
+        gap: 6vw;
+    }
+    .logo-main{
+        height: unset;
+        width: 35vw;
+    }
+}
+@media screen and (max-width: 1658px){
+    .comingSoon-txt{
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width: 1170px){
+    .days-pending{
+        gap: 2vw !important;;
+    }
+}

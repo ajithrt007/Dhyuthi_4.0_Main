@@ -27,7 +27,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 1vh 0;
+  margin: 1vh 0; 
   text-shadow: 0px 0px 19.025px rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 885px) {
@@ -81,9 +81,25 @@
   bottom: unset;
   opacity: 0.4;
 }
+.hollow-font{
+  font-family: 'Avenir Next LT Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40.468px;
+  letter-spacing: 0.01em;
+  font-variant: small-caps;
+  text-shadow: 0px 0px 15.6585px rgba(255, 255, 255, 0.5);
+  transform: matrix(0.98, -0.01, -0.19, 1, 0, 0); 
+  -webkit-text-stroke: 2px white; 
+  -webkit-text-fill-color: rgb(0,0,0,0);
+  color: transparent !important;
+}
 @media screen and (max-width: 810px) {
     .merch{
         flex-direction: column;
         gap: 30px;
     }
+  .hollow-font{
+    font-size: 28px;
+  }
 }
