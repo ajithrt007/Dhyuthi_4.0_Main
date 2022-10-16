@@ -795,4 +795,28 @@ h1,h2,h3,h4,h5,h6 {
         width: 70vw;
     }
 }
-   
+.legacy{
+    padding: 13vh 8vw;
+}
+.legacy h1{
+    text-align: center;
+    margin-bottom: 6vh;
+}
+.smaller-section-title{
+    font-family: 'Avenir Next LT Pro B';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px !important;;
+    margin-left: 0 !important;
+}
+.version-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 5vh;
+}
+.version-info p{
+    text-align: left;
+    padding: 0;    
+}
+.sm
