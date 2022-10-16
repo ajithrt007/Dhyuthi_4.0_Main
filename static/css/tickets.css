@@ -14,13 +14,13 @@
   flex-direction: column;
 }
 .theme-right img{
-  height: 50vw;
+  height: 40vw;
 }
 .theme-right h1{
   width: unset;
 }
 .price{
-  font-family: 'Montserrat';
+  font-family: 'Avenir Next LT Pro Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 1.5vw;
@@ -34,5 +34,20 @@
   .tickets{
     height: unset;
     flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+  }
+  .theme-right img{
+    height: unset;
+    width: 70vw;
+  }
+  .dhyuthi-spcl-title{
+    font-size: 13vw; 
+   }
+  .cursive-heading{
+    font-size: 11vw; 
+  }
+  .price{
+    font-size: 4.5vw;
   }
 }

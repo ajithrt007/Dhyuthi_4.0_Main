@@ -785,8 +785,9 @@ h1,h2,h3,h4,h5,h6 {
         align-items: center;
     }
     .theme-dark-layer{
-        bottom: 0px;
+        bottom: -7px;
         height: 20vh;
+        filter: blur(37px);
     }
     .dhyuthi-spcl-title{
         font-size: 8.5vw;
