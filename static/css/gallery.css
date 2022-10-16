@@ -40,10 +40,11 @@
 }
 @media screen and (max-width: 555px) {
     .picture{
-        height: 10vh;
+        height: unset;
     }
     figcaption{
         font-size: 5vh !important;
+        display: none !important;
     }
     .animatedPicture{
         padding: unset;
